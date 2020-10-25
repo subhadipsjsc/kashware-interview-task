@@ -1,0 +1,33 @@
+#### base url
+GET http://localhost:8000 HTTP/1.1
+
+
+### login
+POST http://localhost:8000/api/auth  HTTP/1.1
+content-type: application/json
+
+{
+    "username": "dfdsgfdgd",
+    "password": "dfesfsfrds"
+}
+
+
+
+
+### json patch 
+GET http://localhost:8000/api/user_details  HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoid2Fmc2Vmc2VmIiwiY29tcGFueSI6Inh5eiIsImNvdW50cnkiOiJVU0EiLCJpYXQiOjE2MDM2MjE0NTksImV4cCI6MTYwMzYyMzI1OX0.tM2AJquU3j2rSk39Qn_aG8ddKIgUpBus_3Pjy0FWcO0
+
+
+
+
+
+### image thumbnil
+POST http://localhost:8000/api/create_Thumbnail  HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGZkc2dmZGdkIiwiY29tcGFueSI6Inh5eiIsImNvdW50cnkiOiJVU0EiLCJpYXQiOjE2MDM2NDEwMTUsImV4cCI6MTYwMzY0MjgxNX0.U_4Dzk7e4mdRFb1ZQzAiwQNKNQRZKC3pcnuChgjyJH4
+
+{
+    "imageurl" : "https://img.etimg.com/thumb/msid-73268134,width-640,resizemode-4,imgsize-35417/surprise-heard-of-a-sony-car.jpg"
+}
